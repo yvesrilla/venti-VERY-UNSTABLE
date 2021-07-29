@@ -76,7 +76,7 @@ bot.on("message", async (message) => {
 
 bot.login(config.token).then(() => {
     console.log(`${bot.user.tag} logged in.`)
-    console.log("sana is online!")
+    console.log("bot is online!")
 
 
     const updateDelay = 5;
@@ -85,7 +85,7 @@ bot.login(config.token).then(() => {
 
     setInterval(() => {
         const activity = status[currentIndex];
-        sana.user.setActivity(activity);
+        bot.user.setActivity(activity);
 
         currentIndex = currentIndex >= status.length - 1
             ? 0
