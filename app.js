@@ -19,9 +19,8 @@ bot.commands = new Discord.Collection();
 const commandFolders = readdirSync('./commands');
 const Timeout = new Discord.Collection();
 const prefix = 'v!';
-bot.on('ready', () => {
-    console.log("Ready!")
-})
+
+const status = ['v!h for help', 'luv u!', 'made by michal#1336'];
 
 const mongoCurrency = require('discord-mongo-currency');
  
@@ -75,4 +74,21 @@ bot.on("message", async (message) => {
     }
 })
 
-bot.login(token);
+bot.login(config.token).then(() => {
+    console.log(`${bot.user.tag} logged in.`)
+    console.log("sana is online!")
+
+
+    const updateDelay = 5;
+    let currentIndex = 0;
+
+
+    setInterval(() => {
+        const activity = status[currentIndex];
+        sana.user.setActivity(activity);
+
+        currentIndex = currentIndex >= status.length - 1
+            ? 0
+            : currentIndex + 1;
+    }, updateDelay * 1000);
+})
