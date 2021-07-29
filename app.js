@@ -36,6 +36,14 @@ for (const folder of commandFolders) {
 }
 bot.on("error", console.error);
 
+const { AutoPoster } = require('topgg-autoposter')
+
+const ap = AutoPoster(config.topkey, bot)
+
+ap.on('posted', () => {
+  console.log('Posted stats to Top.gg!')
+})
+
 
 
 bot.on("message", async (message) => {
