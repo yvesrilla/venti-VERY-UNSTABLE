@@ -1,7 +1,7 @@
 {
-  "name": "venti-main",
+  "name": "venti",
   "version": "1.0.0",
-  "description": "",
+  "description": "genshin impact bot with economy, levelling and genshin impact commands!",
   "main": "app.js",
   "dependencies": {
     "@dbleu/node": "^1.0.0",
@@ -20,6 +20,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "yvesrilla",
+  "license": "MPL 2.0"
 }
