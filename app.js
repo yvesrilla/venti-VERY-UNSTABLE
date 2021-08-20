@@ -3,7 +3,7 @@ require('discord-reply');
 const bot = new Discord.Client();
 const mongoose = require('mongoose');
 const config = require('../../../../../venti-main/config.json');
-const { token, statcordkey, mongokey, topkey} = require('../../../../../venti-main/config.json')
+const { token, statcordkey, mongokey, topkey, dbleukey } = require('../../../../../venti-main/config.json')
 mongoose.connect(config.mongokey, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
@@ -33,7 +33,7 @@ dbapi.on("ready", () => {
         dbapi.postData(SERVER_COUNT, SHARD_COUNT)
     }, 30000);
 })
-dbapi.login("ZH63GiMlUuLHiyixLiwMEuNLW2ADUpu51UIDX2mtLOeSpba1XnHGInHv7ognWCVZZ8I6sty5RXKoA1Cwu3OL8n", "819519754778705970")
+dbapi.login(config.dbleukey)
 
 
 for (const folder of commandFolders) {
