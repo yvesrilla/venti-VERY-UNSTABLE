@@ -1,5 +1,6 @@
 {
 	"token": "some_supersecret.discord_bot_token",
 	"mongokey": "your_mongo_url_string",
-	"topkey": "top.gg_api_token"
+	"topkey": "top.gg_api_token",
+	"dbleukey": "dbleu_api_token"
 }
