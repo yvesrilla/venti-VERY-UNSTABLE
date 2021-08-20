@@ -1,0 +1,25 @@
+{
+  "name": "venti-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "@dbleu/node": "^1.0.0",
+    "@top-gg/sdk": "^3.1.2",
+    "discord-botlist-api": "^2.1.1",
+    "discord-mongo-currency": "^1.0.4",
+    "discord-reply": "^0.1.2",
+    "discord-xp": "^1.1.16",
+    "discord.js": "^12.5.2",
+    "fs": "^0.0.1-security",
+    "mongoose": "^5.13.5",
+    "pm2": "^5.1.0",
+    "statcord.js": "^3.3.0",
+    "topgg-autoposter": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
